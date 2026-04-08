@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sam-pneumothorax-segmentation"
+version = "0.1.0"
+description = "SAM2-based pneumothorax segmentation toolkit for chest X-ray and CT slice sequence workflows"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "opencv-python>=4.7",
+    "matplotlib>=3.7",
+    "pillow>=9.5",
+    "torch>=2.0",
+]
+
+[project.scripts]
+pneumo-seg = "script.sam2_pneumothorax_segmenter:main"
+pneumo-test = "script.test_pneumothorax_segmentation:main"
+
+[tool.setuptools]
+packages = ["script"]
+
