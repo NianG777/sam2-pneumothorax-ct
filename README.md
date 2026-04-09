@@ -18,7 +18,7 @@
 
 ---
 
-## 🧪 测试体系架构（核心亮点）
+## 🧪 测试体系架构
 
 独立从0搭建自动化测试框架，覆盖功能/接口/性能/模型精度四维质量保障。
 
@@ -44,7 +44,7 @@ export SAM2_CHECKPOINT=/path/to/sam2.1_hiera_large.pt
 
 ### 2. 快速命令
 
-### 2.1 代码可运行性检查（不依赖数据集）
+### 2.1 代码可运行性检查
 
 ```bash
 python -m py_compile script\sam2_pneumothorax_segmenter.py script\test_pneumothorax_segmentation.py script\text_to_sam2_prompt.py script\anatomical_constraints.py script\__init__.py
