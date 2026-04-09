@@ -19,3 +19,5 @@ Thumbs.db
 checkpoint/
 data/
 *.nii.gz
+file_path.txt
+file_rename_converter.py
